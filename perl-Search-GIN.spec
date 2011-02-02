@@ -1,9 +1,9 @@
 %define upstream_name    Search-GIN
-%define upstream_version 0.07
+%define upstream_version 0.08
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 2
+Release:    %mkrel 1
 
 Summary:    Generalized Inverted Indexing for Perl
 License:    GPL+ or Artistic
