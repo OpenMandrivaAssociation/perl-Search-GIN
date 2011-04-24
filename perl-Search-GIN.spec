@@ -22,6 +22,7 @@ BuildRequires: perl(Test::More)
 BuildRequires: perl(Test::TempDir)
 BuildRequires: perl(Test::use::ok)
 BuildRequires: perl(namespace::clean)
+BuildRequires: perl(File::NFSLock)
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
 
