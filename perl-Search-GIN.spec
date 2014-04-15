@@ -23,6 +23,7 @@ BuildRequires:	perl(Test::More)
 BuildRequires:	perl(Test::TempDir)
 BuildRequires:	perl(Test::use::ok)
 BuildRequires:	perl(namespace::clean)
+BuildRequires:	perl(namespace::autoclean)
 BuildRequires:	perl(File::NFSLock)
 BuildArch:	noarch
 
@@ -48,32 +49,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
 
-
-%changelog
-* Sun Apr 24 2011 Funda Wang <fwang@mandriva.org> 0.80.0-2mdv2011.0
-+ Revision: 658163
-- add r
-- rebuild for updated spec-helper
-
-* Wed Feb 02 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.80.0-1
-+ Revision: 635242
-- update to new version 0.08
-
-* Thu Jan 06 2011 Guillaume Rousse <guillomovitch@mandriva.org> 0.70.0-2mdv2011.0
-+ Revision: 629072
-- new upstream tarball, with same version number (sic)
-
-* Fri Nov 12 2010 Jérôme Quelin <jquelin@mandriva.org> 0.70.0-1mdv2011.0
-+ Revision: 596644
-- update to 0.07
-
-* Fri Jul 30 2010 Shlomi Fish <shlomif@mandriva.org> 0.40.0-1mdv2011.0
-+ Revision: 563367
-- import perl-Search-GIN
-
-
-* Fri Jul 30 2010 Shlomi Fish <shlomif@iglu.org.il> 0.04-1mdv
-- Updated to the new version.
-
-* Fri Feb 05 2010 cpan2dist 0.03-1mdv
-- initial mdv release, generated with cpan2dist
