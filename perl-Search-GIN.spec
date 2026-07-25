@@ -1,15 +1,15 @@
 %define upstream_name    Search-GIN
-%define upstream_version 0.08
+%define upstream_version 0.11
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	1
 
 Summary:	Generalized Inverted Indexing for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Search/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://github.com/karenetheridge/Search-GIN
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Search-GIN-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
