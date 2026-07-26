@@ -1,15 +1,13 @@
 %define upstream_name    Search-GIN
-%define upstream_version 0.11
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.11
+Release:	2
 
 Summary:	Generalized Inverted Indexing for Perl
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/karenetheridge/Search-GIN
-Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Search-GIN-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/E/ET/ETHER/Search-GIN-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -34,7 +32,7 @@ This is used by the KiokuDB manpage for custom indexing.
 More documentation will be released shortly.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
